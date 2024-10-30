@@ -415,7 +415,7 @@ const Members = () => {
         <div className="flex items-center text-left ml-10">
           <Link to="/">
             <p className="text-4xl font-bold text-peach cursor-pointer">
-              Set Off
+              CreditFi
             </p>
           </Link>
         </div>
@@ -482,7 +482,7 @@ const Members = () => {
               name="contributeAmount"
               value={contributeAmount}
               onChange={(e) => setContributeAmount(e.target.value)}
-              placeholder="Contribution Amount (ETH)"
+              placeholder="Contribution Amount (AIA)"
               className="p-2 border border-gray-300 rounded"
             />
             <button
@@ -514,7 +514,7 @@ const Members = () => {
                   name="amount"
                   value={loanDetails.amount}
                   onChange={handleInputChange}
-                  placeholder="Loan Amount (ETH)"
+                  placeholder="Loan Amount (AIA)"
                   className="p-2 border border-gray-300 rounded"
                 />
                 <input
@@ -572,7 +572,7 @@ const Members = () => {
       <div key={index} className="bg-white p-4 rounded-lg mb-4">
         <p>Loan ID: {loanId !== -1 ? loanId : "Not found"}</p>
         <p>Lender: {loan.lender}</p>
-        <p>Amount: {ethers.utils.formatEther(loan.amount)} ETH</p>
+        <p>Amount: {ethers.utils.formatEther(loan.amount)} AIA</p>
         <p>Interest Rate: {loan.interestRate.toString()}%</p>
         <p>Term: {loan.term.toString()} months</p>
         <button
@@ -607,7 +607,7 @@ const Members = () => {
                   <div key={index} className="bg-white  p-4 rounded-lg mb-4">
                     <p>Loan ID: {loanId !== -1 ? loanId : "Not found"}</p>
                     <p>Borrower: {loan.borrower}</p>
-                    <p>Amount: {ethers.utils.formatEther(loan.amount)} ETH</p>
+                    <p>Amount: {ethers.utils.formatEther(loan.amount)} AIA</p>
                     <p>Interest Rate: {loan.interestRate.toString()}%</p>
                     <p>Term: {loan.term.toString()} months</p>
                     <p>Listed: {loan.listed.toString()}</p>
@@ -644,7 +644,7 @@ const Members = () => {
                   <p>Settlement ID: {index}</p>
                   <p>Creditor: {settlement.creditor.toString()}</p>
                   <p>Debtor: {settlement.debtor.toString()}</p>
-                  <p>Amount: {(settlement.amount ).toString()} ETH</p>
+                  <p>Amount: {(settlement.amount ).toString()} AIA</p>
                 </div>
               ))
             ) : (

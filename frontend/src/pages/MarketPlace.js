@@ -162,7 +162,7 @@ const MarketPlace = () => {
         <div className="flex items-center text-left ml-10">
           <Link to="/">
             <p className="text-4xl font-bold text-peach cursor-pointer">
-              Set Off
+              CreditFi
             </p>
           </Link>
         </div>
@@ -233,7 +233,7 @@ const MarketPlace = () => {
               >
                 <p>Loan ID: {loanId !== -1 ? loanId : "Not found"}</p>
                 <p>Lender: {loan.lender}</p>
-                <p>Amount: {ethers.utils.formatEther(loan.amount)} ETH</p>
+                <p>Amount: {ethers.utils.formatEther(loan.amount)} AIA</p>
                 <p>Interest Rate: {loan.interestRate.toString()}%</p>
                 <p>Term: {loan.term.toString()} months</p>
                 {/* Show borrow button only if the current account is not the lender */}
